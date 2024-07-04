@@ -1,0 +1,2 @@
+INSERT INTO BOOK (TITLE, AUTHOR) VALUES ('The Hobbit', 'J.R.R. Tolkien');
+INSERT INTO BOOK (TITLE, AUTHOR) VALUES ('1984', 'George Orwell');

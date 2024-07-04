@@ -1,0 +1,24 @@
+server:
+  port: 9001
+spring:
+  security:
+    oauth2:
+      authorizationserver:
+        issuer: http://127.0.0.1:9001
+        client:
+          practice-ng:
+            registration:
+              client-id: practice-ng
+              client-secret: "{noop}secret"
+              client-name: Practice Web Application
+              client-authentication-methods:
+                - client_secret_basic
+              authorization-grant-types:
+                  - authorization_code
+                  - refresh_token
+              redirect-uris:
+                  - http://localhost:4200
+              scopes:
+                  - openid
+                  - practice-svc.consult
+                  - practice-svc.manage
